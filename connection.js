@@ -1,4 +1,4 @@
-const mongoose = require('Mongoose')
+const mongoose = require('mongoose')
 mongoose.connect('mongodb+srv://shiv:uzzawal12@cluster0-p94fr.mongodb.net/test?retryWrites=true&w=majority',{useNewUrlParser:  true, useUnifiedTopology: true})
 const db=mongoose.connection
 db.on('error',console.error.bind(console,'connection error:'))
