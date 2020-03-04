@@ -12,5 +12,6 @@ app.post("/",async(req,res)=>{
     console.log("Ho gail")
     res.status(200).send("Hai gava")
 })
+console.log(process.env.PORT)
 
 app.listen(process.env.PORT||3000,()=>console.log("Shuru hoi gava"))
