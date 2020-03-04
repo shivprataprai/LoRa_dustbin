@@ -9,7 +9,8 @@ db.once('open',function(){
 
 const Notes =new mongoose.Schema({
     note: String
-    }
+    },
+    {strict:false}
 )
 
 const datamodel = mongoose.model('datas',Notes )

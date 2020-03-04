@@ -9,7 +9,7 @@ app.use(bodyParser.json())
 app.post("/",async(req,res)=>{
     console.log("got a request")
     console.log(JSON.stringify(req.body))
-    await DB.create({note:JSON.stringify(req.body)})
+    await DB.create(req.body)
     console.log("Ho gail")
     res.status(200).send("Hai gava")
 })
