@@ -11,7 +11,9 @@ app.post("/",async(req,res)=>{
     await DB.create(JSON.stringify(req.body))
     console.log("Ho gail")
     res.status(200).send("Hai gava")
-    
+})
+app.get("/",(req,res)=>{
+    res.send("SERVER UP AND RUNNING")
 })
 
 console.log(process.env.PORT)
